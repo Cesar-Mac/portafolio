@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <title>Encriptador</title>
+</head>
+<body>
+    <main class="display-grid">
+        <div class="grid-item-1">
+            <img src="img/Logo.svg" alt="Logo Alura">
+        </div>
+        <div class="grid-item-2">
+            <textarea name="texto" id="inptTextArea" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="box-exclamation">
+                <svg width="17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd" />
+                </svg>
+                <small>Solo letras minúsculas y sin acentos</small>
+            </div>
+            <div class="box-controls">
+                <button class="btn" type="button" id="btnEncrypted">
+                    <strong>Encriptar</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                </button>
+                <button class="btn" type="button" id="btnDecrypted">
+                    <strong>Desencriptar</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                </button>            
+            </div>
+        </div>
+        <div class="grid-item-3">
+            <div class="box-result-encriptador">
+                <img class="pre-information" src="img/gato.webp" alt="Gato">
+                <h2 class="pre-information" >Ningún mensaje fue encontrado</h2>
+                <span class="pre-information" >Ingresa el texto que desees encriptar o desencriptar.</span>
+                <textarea id="outptTextArea" id="inpt_texto" placeholder="Ingresa el texto aquí"></textarea>
+                <button type="button" id="btnCopyResult" class="ui-btn">
+                    <span>
+                      Copiar! 
+                    </span>
+                  </button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
